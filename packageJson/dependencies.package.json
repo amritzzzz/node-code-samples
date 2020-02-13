@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "@szmarczak/http-timer": "^4.0.0",
+    "duplexer3": "~0.1.4",
+    "get-stream": "^5.0.0",
+    "to-readable-stream": "2.0.0"
+  }
+}

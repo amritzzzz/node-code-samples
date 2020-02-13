@@ -1,0 +1,13 @@
+{
+    "name": "test",
+    "version": "1.0.0",
+    "main": "index.js",
+    "scripts": {
+      "clean": "rimraf ./dist && mkdir dist", // runs rimraf first, waits for completion, then mkdir
+      "prestart": "npm run clean & ng lint", // runs clean and ng lint in parallel
+      "start": "node index.js",
+      "poststart": "echo project $npm_package_name has been started" // will output "project test has been started" 
+      // running npm start will be the same as running npm run prestart && npm run start && npm run poststart
+    }
+  }
+  
